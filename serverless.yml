@@ -23,7 +23,10 @@ frameworkVersion: "2"
 provider:
   name: aws
   runtime: nodejs12.x
-
+  apiGateway:
+    shouldStartNameWithService: true
+  stage: dev
+  profile: serverless-servicename-agent
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
